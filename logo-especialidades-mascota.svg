@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 80" width="540" height="160">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#68d8d2"/>
+      <stop offset="100%" stop-color="#3ab8b3"/>
+    </linearGradient>
+    <filter id="sh" x="-15%" y="-12%" width="145%" height="140%">
+      <feDropShadow dx="1.5" dy="2" stdDeviation="2" flood-color="#00000028"/>
+    </filter>
+  </defs>
+
+  <rect width="270" height="80" fill="white"/>
+
+  <!-- Diente escalado al 50% para dar espacio al texto -->
+  <g transform="translate(4,3) scale(0.5)" filter="url(#sh)">
+
+    <path
+      fill-rule="evenodd"
+      d="M5,44
+         C5,13   12,6   26,6
+         C36,6   38,21  45,21
+         C52,21  54,6   64,6
+         C78,6   85,13  85,44
+         C85,68  82,105 82,118
+         C82,130 70,140 60,140
+         C58,140 58,133 58,120
+         L58,90
+         C58,78  32,78  32,90
+         L32,120
+         C32,133 32,140 30,140
+         C20,140 8,130   8,118
+         C8,105   5,68   5,44
+         Z"
+      fill="url(#g)"
+      stroke="#2a9490"
+      stroke-width="2"
+      stroke-linejoin="round"/>
+
+    <path
+      d="M5,44 C5,13 12,6 26,6 C36,6 38,21 45,21 C52,21 54,6 64,6
+         C78,6 85,13 85,44 L85,28 Q65,13 45,12 Q25,13 5,28 Z"
+      fill="white" opacity="0.22"/>
+
+    <circle cx="30" cy="29" r="10" fill="white"/>
+    <circle cx="32" cy="30.5" r="5.8" fill="#1e4f4c"/>
+    <circle cx="34.5" cy="28" r="2.3" fill="white"/>
+
+    <circle cx="60" cy="29" r="10" fill="white"/>
+    <circle cx="62" cy="30.5" r="5.8" fill="#1e4f4c"/>
+    <circle cx="64.5" cy="28" r="2.3" fill="white"/>
+
+    <path d="M20,52 Q45,72 70,52 L70,47 Q45,43 20,47 Z" fill="#1e4f4c" opacity="0.85"/>
+    <rect x="36" y="47" width="8.5" height="10" rx="1.8" fill="white"/>
+    <rect x="46" y="47" width="8.5" height="10" rx="1.8" fill="white"/>
+
+  </g>
+
+  <!-- Texto grande -->
+  <text x="62" y="30" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d8a85" letter-spacing="0.2">Especialidades</text>
+  <text x="62" y="56" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d8a85" letter-spacing="0.2">Odontológicas</text>
+  <text x="63" y="71" font-family="Georgia, serif" font-size="12" font-weight="400" fill="#888" letter-spacing="0.5">Grupo Dental, S.L.</text>
+</svg>

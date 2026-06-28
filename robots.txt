@@ -1,0 +1,6 @@
+# DEPLOY: renombrar a robots.txt en especialidadesodontologicas.com
+User-agent: *
+Allow: /
+Disallow: /comerciales.html
+
+Sitemap: https://especialidadesodontologicas.com/sitemap.xml
