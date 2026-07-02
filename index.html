@@ -613,6 +613,10 @@ footer{background:var(--navy-dark);padding:56px 48px 28px}
   .hero h1{font-size:36px}
   .hero-actions{flex-direction:column;align-items:center}
   .btn-primary,.btn-outline{width:100%;max-width:300px;justify-content:center}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)!important}
+}
+@media(max-width:400px){
+  .gallery-grid{grid-template-columns:1fr!important}
 }
 
 /* ── REDUCED MOTION ── */
@@ -863,8 +867,32 @@ body.has-banner{padding-top:36px}
       </div>
       <div class="rv-r" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <img src="foto-recepcion.jpg" alt="Recepción de la clínica dental Especialidades Odontológicas en Carabanchel" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;">
-        <img src="foto-las-chicas.jpg" alt="Las Chicas — equipo de Especialidades Odontológicas" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:4px;">
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <img src="foto-las-chicas.jpg" alt="Las Chicas — equipo de Especialidades Odontológicas" style="width:100%;aspect-ratio:1;object-fit:cover;object-position:center top;border-radius:4px;">
+          <img src="img/dental/exterior-fachada.jpg" alt="Fachada exterior de la clínica dental Especialidades Odontológicas en Carabanchel, Madrid" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;">
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA CLÍNICA -->
+<section class="section" id="galeria" style="background:var(--cream);padding-top:72px;padding-bottom:72px;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;" class="rv">
+      <div class="section-eyebrow">Nuestra clínica</div>
+      <h2 class="section-title">Un espacio <em>pensado para ti</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;" class="stg gallery-grid">
+      <img src="foto-recepcion-2.jpg" alt="Recepción de Especialidades Odontológicas" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-sala-pasillo.jpg" alt="Sala de espera y pasillo de la clínica dental" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-fachada.jpg" alt="Fachada exterior de Especialidades Odontológicas en Carabanchel" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-sala-entrada.jpg" alt="Sala de espera clínica dental Madrid Sur" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-sala-espera.jpg" alt="Zona de espera moderna en Especialidades Odontológicas" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-entrada.jpg" alt="Entrada de la clínica dental Especialidades Odontológicas" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-fachada-noche.jpg" alt="Clínica dental Especialidades Odontológicas de noche, Carabanchel" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-pasillo.jpg" alt="Pasillo interior de la clínica dental" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
+      <img src="foto-rincon.jpg" alt="Rincón infantil en la sala de espera de Especialidades Odontológicas" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;">
     </div>
   </div>
 </section>
