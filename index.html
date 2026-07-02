@@ -613,10 +613,21 @@ footer{background:var(--navy-dark);padding:56px 48px 28px}
   .hero h1{font-size:36px}
   .hero-actions{flex-direction:column;align-items:center}
   .btn-primary,.btn-outline{width:100%;max-width:300px;justify-content:center}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)!important}
-}
-@media(max-width:400px){
-  .gallery-grid{grid-template-columns:1fr!important}
+  .gallery-grid{
+    display:flex!important;
+    flex-direction:row!important;
+    overflow-x:auto!important;
+    gap:10px!important;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:8px;
+  }
+  .gallery-grid img{
+    flex:0 0 80vw!important;
+    width:80vw!important;
+    aspect-ratio:4/3!important;
+    scroll-snap-align:start;
+  }
 }
 
 /* ── REDUCED MOTION ── */
